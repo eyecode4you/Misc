@@ -77,11 +77,4 @@ void loop() {
       }
   }
   delay(2000);//delay for 2 seconds
-
-  //TESTING Stuff
-  //Serial.println("the analog read data is ");
-  //Serial.println(sensorValue);
-  //Serial.println("the sensor resistance is ");
-  //Serial.println(Rsensor,DEC);//show the light intensity on the serial monitor;
-  //delay(1000);
 }//end main loop
