@@ -1,5 +1,5 @@
 #word_present_in_text.py
-#eyecode4you.wordpress.com/
+#EyeCode4You - Do what you like with this file!
 
 """ Here we will check to see if the characters of one string is 
 	contained within another string.
