@@ -1,7 +1,6 @@
 /*
   morse_check.h - Check letter passed in by main and play International Morse code equivalent
-  Jonathan Mooney D19124230 24/11/2020
-  DT080A IoT Final Project 
+  EyeCode4You
   International Morse Code Chart from: https://otasurvivalschool.com/signalling/learn-the-morse-code/
  
   Order of Operation based on Highest Letter Frequency in English language:
