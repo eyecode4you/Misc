@@ -1,6 +1,5 @@
 /* arduino_morse_code.ino - Convert inputted message to Morse Code (International) and display on OLED screen 
-   Jonathan Mooney D19124230 24/11/2020
-   DT080A IoT Final Project
+   EyeCode4You
 */
 #include <Arduino.h>
 #include <U8x8lib.h>
