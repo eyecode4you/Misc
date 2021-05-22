@@ -1,1 +1,1 @@
-# Folder for Python-based work
+# Folder for small Python-based stuff
