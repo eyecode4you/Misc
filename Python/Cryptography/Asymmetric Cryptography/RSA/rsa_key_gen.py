@@ -84,7 +84,7 @@ def decrypt(cipher_text):
     return (cipher_text ** d) % n
 
 # Message to encode
-msg = 246
+msg = 69
 
 enc_msg = encrypt(msg)
 dec_msg = decrypt(enc_msg)
