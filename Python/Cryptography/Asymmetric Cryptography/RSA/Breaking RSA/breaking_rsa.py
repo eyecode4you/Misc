@@ -53,3 +53,27 @@ while(True):
     else:
         d_found += 1
 print("Private key number:", d_found)
+
+
+# Key gen and message enc/dec
+public = (e, n)
+private = (d_found, n)
+print(f"\nPublic Key: {public}\nPrivate Key: {private}")
+
+# Encryption
+def encrypt(plain_text):
+    return (plain_text ** e) % n
+
+# Decryption
+def decrypt(cipher_text):
+    return (cipher_text ** d_found) % n
+
+# Message to encode (will only work ~246 as keysize is small) 
+msg = 21
+
+enc_msg = encrypt(msg)
+dec_msg = decrypt(enc_msg)
+
+print("\nOriginal message:", msg)
+print("Encrypted message:", enc_msg)
+print("Decrypted message:", dec_msg)
