@@ -1,4 +1,4 @@
-# Crypto Hashing in Python using SHA-256
+# crypto_sha-256.py - Crypto Hashing in Python using SHA-256
 # As part of: https://learning.quantum.ibm.com/course/practical-introduction-to-quantum-safe-cryptography/cryptographic-hash-functions
 
 from cryptography.hazmat.backends import default_backend
