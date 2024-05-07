@@ -1,6 +1,5 @@
 #num_process.py
-#EyeCode4You - Do what you like with this file!
-""" Here we will take a list of numbers from user input using the 
+""" 	Take a list of numbers from user input using the 
 	input() function and calculate the sum.
 	The input() function returns a string so we will separate the
 	individual numbers before processing them. """
