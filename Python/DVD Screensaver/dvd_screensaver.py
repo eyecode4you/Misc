@@ -1,5 +1,5 @@
 '''
-dvd_screensvaer.py
+dvd_screensaver.py
 eyecode4you
 
 CC0 - do what you want with this!
