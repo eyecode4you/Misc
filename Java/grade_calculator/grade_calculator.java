@@ -12,22 +12,18 @@ public class grade_calculator{
 			        + "Pass, Merit, and Distinction Status based on score achieved in \n"
 			        + "Skill Demonstrations (60%) and the Theory Test (40%)\n"
 			        + "________________________________________________________________";
-			
 			String grade = null; //Used for displaying result status.
 			
 			//Variables for getting results and computing the result.
 			double skillDemo = 0, theoryTest = 0, result = 0;
-			
 			System.out.print("\n"+Desc);
 			
-			do{
-				//Prompt for Skills demo results while input<0 or >60.
+			do{	//Prompt for Skills demo results while input<0 or >60.
 				System.out.print("\n\nEnter Total Marks For SKILLS DEMONSTRATIONS : ");
 				skillDemo = in.nextDouble();
 			}while(skillDemo < 0 || skillDemo > 60);
 			
-			do{
-				//Prompt for theory test results while input<0 or >40.
+			do{	//Prompt for theory test results while input<0 or >40.
 				System.out.print("Enter Total Marks For THEORY TEST : ");
 				theoryTest = in.nextDouble();
 			}while(theoryTest < 0 || theoryTest > 40);
