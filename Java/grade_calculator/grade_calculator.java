@@ -1,7 +1,7 @@
 package grade_calculator;
 import java.util.Scanner; //Scanner to get user input
 /**
- * Program grade_calculator.java - Calculate Class Grade
+ * Program grade_calculator.java - Calculate Class Grade, baby's first java prog
  * Date 09/01/2019
  * @author EyeCode4You
  */
