@@ -1,16 +1,13 @@
 # diffie-hellman.py
-
 # 1: Alice and Bob agree on a prime number p and primitive root a e.g. 11 and 7
 p = 11
 a = 7
-
 print(f"Prime: {p}")
 print(f"Primitive Root: {a}")
 
-# 2: Alice chosses a secret exponent Ka and calculates Ha = a^ka (mod p)
+# 2: Alice choses a secret exponent Ka and calculates Ha = a^ka (mod p)
 K_a = 4 # Alice's private key
 H_a = (a**(K_a)) % p # Alice's public key
-
 print(f"\nAlice private: {K_a} and public: {H_a}")
 
 # 3: Bob does the same with his own secret
