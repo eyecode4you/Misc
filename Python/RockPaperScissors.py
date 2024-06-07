@@ -46,10 +46,9 @@ def main():
 		while 1:
 			try:
 				usr_choice_indx = usr_option(options)
-				break #exit loop
+				break
 			except:
 				print("\n****Please enter a number between 1 and 4!****\n")
-				
 		usr_choice = options[usr_choice_indx] #str based on generated tuple index	
 		if usr_choice == options[3]:
 			sys.exit()
