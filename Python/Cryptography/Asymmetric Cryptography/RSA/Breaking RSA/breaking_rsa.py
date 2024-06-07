@@ -7,7 +7,7 @@ n = 247 # the modulus
 e = 5 # public key no.
 a = 6 # a selected coprime to n
 
-# 1: Pick a number coprime to modulus, almost any guessed will do, here we use 6
+# 1: Pick a number coprime to modulus, almost any guess will do, here we use 6
 assert math.gcd(a, n) == 1
 print(f"Checked {n} and {a} are coprime")
 
