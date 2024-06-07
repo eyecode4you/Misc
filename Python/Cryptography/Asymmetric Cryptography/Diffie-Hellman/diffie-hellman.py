@@ -13,7 +13,6 @@ print(f"\nAlice private: {K_a} and public: {H_a}")
 # 3: Bob does the same with his own secret
 K_b = 8 # Bob's private key
 H_b = (a**(K_b)) % p # Bob's public key
-
 print(f"Bob private: {K_b} and public: {H_b}")
 
 # 4: The two parties exchange their public keys Ha and Hb
