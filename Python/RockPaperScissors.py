@@ -59,7 +59,7 @@ def main():
 		print("You chose", usr_choice)	
 		w, l, d = results(cpu_choice_indx, usr_choice_indx, w, l, d)
 		print("Results -> Wins: {} Losses: {} Draws: {}".format(w, l, d))
-		print("\n\n\n")
+		print("\n\n")
 	
 if __name__ == "__main__":
 	main()
