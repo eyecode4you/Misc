@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Read the CSV file
-df = pd.read_csv("Downloads/road_traffic_deaths.csv")
+df = pd.read_csv("road_traffic_deaths.csv")
 
 # Create a figure with two subplots
 fig, axs = plt.subplots(1, 2, figsize=(16, 6))
