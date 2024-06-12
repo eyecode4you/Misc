@@ -11,12 +11,12 @@ c = tk.Canvas(root, width=1000, height=800, bg='black')
 c.grid()
 c.configure(scrollregion=(-500, -400, 500, 400))
 
-#actual milky way dimensions (light years)
+#Milky Way dimensions (light years)
 DISC_RADIUS = 50000
 DISC_HEIGHT = 1000
 DISC_VOL = math.pi * DISC_RADIUS**2 * DISC_HEIGHT
 
-#Scaling the Galaxy and Calculating the Probability of Detection
+#Scaling the Galaxy
 def scale_galaxy():
 	"""Scale galaxy dimensions based on radio bubble size (scale)"""
 	disc_radius_scaled = round(DISC_RADIUS / SCALE)
