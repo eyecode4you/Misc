@@ -16,7 +16,6 @@ DISC_RADIUS = 50000
 DISC_HEIGHT = 1000
 DISC_VOL = math.pi * DISC_RADIUS**2 * DISC_HEIGHT
 
-#Scaling the Galaxy
 def scale_galaxy():
 	"""Scale galaxy dimensions based on radio bubble size (scale)"""
 	disc_radius_scaled = round(DISC_RADIUS / SCALE)
@@ -24,7 +23,6 @@ def scale_galaxy():
 	disc_vol_scaled = DISC_VOL/bubble_vol
 	return disc_radius_scaled, disc_vol_scaled
 	
-#Using Polar Coordinates
 def random_polar_coordinates(disc_radius_scaled):
 	"""Generate a uniform random (x, y) point within a disc for 2D display"""
 	r = random()
@@ -33,7 +31,6 @@ def random_polar_coordinates(disc_radius_scaled):
 	y = round(math.sqrt(r) * math.sin(theta) * disc_radius_scaled)
 	return x, y
 	
-#Building Spiral Arms
 def spirals(b, r, rot_fac, fuz_fac, arm):
 	"""Build spiral arms for tkinter display using logarithmic spiral equation
 	
@@ -62,11 +59,9 @@ def spirals(b, r, rot_fac, fuz_fac, arm):
 		elif arm == 1:
 			c.create_oval(x, y, x, y, fill='red', outline='')
 			
-			
-#Scattering Star Haze
 def star_haze(disc_radius_scaled, density):
 	"""Randomly distribute faint tkinter stars in galactic disc
-	disc_radius_scaled = galactic disc radius scaled to radio bubble diameter
+	disc_radius_scaled = galactic disc radius scaled to bubble diameter
 	density = multiplier to vary no. of stars posted
 	"""
 	
@@ -74,9 +69,8 @@ def star_haze(disc_radius_scaled, density):
 		x, y = random_polar_coordinates(disc_radius_scaled)
 		c.create_text(x, y, fill='green', font=('Helvetica', '7'), text='.')
 		
-#Defining the main() Function
 def main():
-	"""Calculate detection probability & post galaxy display & stats"""
+	"""Galaxy Display"""
 	for i in range(250):
 		disc_radius_scaled, disc_vol_scaled = scale_galaxy()
 			
@@ -96,7 +90,6 @@ def main():
 		root.update()
 		root.update_idletasks()
 		c.delete('all')
-		print("a")
 		
 if __name__ == "__main__":
 	main()
