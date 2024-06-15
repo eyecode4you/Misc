@@ -1,6 +1,6 @@
 """ BirthdayParadox.py - Probability of number of people in group having
 	the same B-day
-	Using some form of Monte Carlo Simulation
+	Using Monte Carlo Simulation
 	EyeCode4You - Do what you like with this file!
 """
 import random
